@@ -1,0 +1,43 @@
+package plsqltest;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class ProcedureTest {
+
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	
+	
+	public void connect() {
+		try {
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","javalink","javalink");
+			System.out.println("커넥트 완료");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void insert() {
+		
+	}
+	
+	public void select() {
+		
+	}
+	
+	public void insertMember() {
+		
+	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		ProcedureTest pt = new ProcedureTest();
+	}
+}

@@ -1,0 +1,17 @@
+package test3;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class SampleMain {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		
+		SampleDAO dao = new SampleDAO();
+		ArrayList<SampleDAO> adao = new ArrayList<>();
+		
+		dao.findAll();
+	}
+
+}

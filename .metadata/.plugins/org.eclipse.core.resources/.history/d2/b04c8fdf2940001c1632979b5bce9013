@@ -1,0 +1,39 @@
+package plsqltest;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
+
+public class ProcedureTest {
+
+	public void insert() {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		
+		
+		try {
+//			Class.forName("java.lang.String");
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+
+			conn = DriverManager.getConnection(url, "javalink", "javalink");
+			pstmt = conn.createStatement();
+	}
+	
+	public void select() {
+		
+	}
+	
+	public void insertMember() {
+		
+	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+
+	}
+}

@@ -1,0 +1,24 @@
+package plsqltest;
+
+public class ProcedureTest {
+
+	public void insert() {
+		
+	}
+	
+	public void select() {
+		
+	}
+	
+	public void insertMember() {
+		
+	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+
+	}
+}
