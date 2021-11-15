@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-
+//ㅇㅇㅇㅇㅇㅇㅇ
 public class JdbcUtil {
 	static String url = null;
 	static Statement stmt =null;
