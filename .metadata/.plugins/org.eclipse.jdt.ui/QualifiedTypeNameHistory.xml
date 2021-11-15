@@ -19,11 +19,15 @@
     <fullyQualifiedTypeName name="java.sql.SQLType"/>
     <fullyQualifiedTypeName name="plsqltest.ProcedureTest"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
-    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.CallableStatement"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="function.Selfnumber"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.io.Console"/>
+    <fullyQualifiedTypeName name="mms.member.vo.Member"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="mms.member.util.ConsoleUtill"/>
+    <fullyQualifiedTypeName name="mms.member.svc.MemberAddService"/>
 </qualifiedTypeNameHistroy>
