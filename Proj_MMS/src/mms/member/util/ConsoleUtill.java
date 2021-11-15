@@ -7,10 +7,19 @@ import mms.member.vo.Member;
 public class ConsoleUtill {
 	public Member getNewMember(Scanner sc) {
 		
-		ArrayList<String> al = new ArrayList<>();
+		Member member = new Member();
+		System.out.print("이름: ");
+		member.setName(sc.next());
+		System.out.print("주소: ");
+		member.setAddr(sc.next());
+		System.out.print("국가: ");
+		member.setNation(sc.next());
+		System.out.print("이메일: ");
+		member.setEmail(sc.next());
+		System.out.print("나이: ");
+		member.setAge(sc.nextInt());
 		
-		
-		return new Member();
+		return member;
 	}
 	public void printAddSuccessMessage(Member newMember) {
 		System.out.println(newMember.getName() + " 회원 정보 추가 성공");
@@ -22,7 +31,12 @@ public class ConsoleUtill {
 
 	public void printMemberList(ArrayList<Member> memberList) {
 		//size() : 컬렉션에 저장되어 있는 요소의 개수를 리턴하는 메소드
-
+		
+		for(int i=0; i<memberList.size(); i++) {
+			Member m= memberList.get(i);
+			System.out.println("name= "+m.getName() + ", address= "+ m.getAddr()+ ", email= "+m.getAddr()+", nation= "+ m.getNation()+
+						", age= " + m.getAge());
+		}
 
 	}
 

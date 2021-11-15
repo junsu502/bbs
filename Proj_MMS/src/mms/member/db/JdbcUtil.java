@@ -34,7 +34,31 @@ public class JdbcUtil {
 		}
 	}
 	
-//	commit rollback
-	
+	public static void commit() {
+		String sql = "commit";
+		try {
+			int count = stmt.executeUpdate(sql);
+			if(count>0) {
+				System.out.println("커밋되었습니다.");
+			}else {
+				System.out.println("커밋되지 않았습니다.");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void rollback() {
+		String sql = "rollback";
+		try {
+			int count = stmt.executeUpdate(sql);
+			if(count>0) {
+				System.out.println("롤백되었습니다.");
+			}else {
+				System.out.println("롤백되지 않았습니다.");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 	
 }
