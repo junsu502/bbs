@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="mms.member.action.Action"/>
+    <fullyQualifiedTypeName name="mms.member.action.MemberAddAction"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="mms.member.contoller.MemberController"/>
+    <fullyQualifiedTypeName name="mms.member.ui.MemberUI"/>
+    <fullyQualifiedTypeName name="mms.member.dao.MemberDAO"/>
+    <fullyQualifiedTypeName name="mms.member.db.JdbcUtil"/>
+    <fullyQualifiedTypeName name="mms.member.svc.MemberAddService"/>
+    <fullyQualifiedTypeName name="java.io.Console"/>
+    <fullyQualifiedTypeName name="mms.member.action.MemberListAction"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="mms.member.util.ConsoleUtill"/>
+    <fullyQualifiedTypeName name="mms.member.svc.MemberListService"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="mms.member.vo.Member"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+</qualifiedTypeNameHistroy>

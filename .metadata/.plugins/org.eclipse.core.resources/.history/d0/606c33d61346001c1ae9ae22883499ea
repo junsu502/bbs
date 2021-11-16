@@ -1,0 +1,19 @@
+package mms.member.action;
+
+import java.sql.Connection;
+import java.util.Scanner;
+
+import mms.member.dao.MemberDAO;
+
+public class MemberAddAction implements Action{
+
+	@Override
+	public void execute(Scanner sc) throws Exception {
+		Connection con = null;
+		MemberDAO memberdao = new MemberDAO(con);
+		
+		
+		
+	}
+
+}

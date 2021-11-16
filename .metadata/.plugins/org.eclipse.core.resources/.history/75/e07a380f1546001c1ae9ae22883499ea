@@ -1,0 +1,21 @@
+package mms.member.action;
+
+import java.sql.Connection;
+import java.util.Scanner;
+
+import mms.member.dao.MemberDAO;
+import mms.member.svc.MemberAddService;
+
+public class MemberAddAction implements Action{
+
+	@Override
+	public void execute(Scanner sc) throws Exception {
+		
+		MemberAddService memberadd = new MemberAddService();
+		
+		
+		
+		
+	}
+
+}
