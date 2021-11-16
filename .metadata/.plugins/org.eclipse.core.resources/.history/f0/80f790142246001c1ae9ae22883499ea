@@ -1,0 +1,78 @@
+package mms.member.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+import mms.member.db.JdbcUtil;
+import mms.member.vo.Member;
+
+public class MemberDAO {
+	Connection con;
+
+	public MemberDAO(Connection con) {
+		this.con = con;
+	}
+
+	public int insertNewMember(Member newMember) {
+		String sql = "insert into mms_member values(mms_seq.nextval,?,?,?,?,?)";
+		int count = 0;
+		PreparedStatement pstmt = null;
+		try {
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, newMember.getName());
+			pstmt.setString(2, newMember.getAddr());
+			pstmt.setString(3, newMember.getNation());
+			pstmt.setString(4, newMember.getEmail());
+			pstmt.setInt(5, newMember.getAge());
+			count = pstmt.executeUpdate();
+			System.out.println(count);
+		} catch (SQLException e) {
+
+		}
+		JdbcUtil.close(pstmt);
+
+		return count;
+
+	}
+
+	public ArrayList<Member> selectMemberList() {
+		String sql = "select * from mms_member";
+		System.out.println("셀렉트멤버리스트 들어옴");
+		ArrayList<Member> alm = new ArrayList<Member>();
+		try {
+			PreparedStatement pstmt = con.prepareStatement(sql);
+			ResultSet rs = pstmt.executeQuery();
+			while(rs.next()) {
+			String name	= rs.getString(1);
+			String addr	= rs.getString(2);
+			String email = rs.getString(3);
+			String nation = rs.getString(4);
+			int age = rs.getInt(5);
+			Member member = new Member(name, addr, nation, email, age);
+			System.out.println(name);
+			alm.add(member);
+			}
+		} catch (SQLException e) {
+		}
+		return alm;
+	}
+
+	public Member selectOldMember(String name) {
+		return null;
+
+	}
+
+	public int updateMember(Member updateMember) {
+		return 0;
+
+	}
+
+	public int deleteMember(String name) {
+		return 0;
+
+	}
+}

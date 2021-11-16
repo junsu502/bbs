@@ -1,0 +1,22 @@
+package mms.member.db;
+
+import java.sql.Connection;
+
+public class JdbcUtil {
+	
+	static {
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+		} catch (ClassNotFoundException e) {
+		}
+	}
+	public static Connection getConnection() {
+		Connection con = null;
+	}
+	public static void close(Connection con) {
+		con.
+	}
+	
+	
+}

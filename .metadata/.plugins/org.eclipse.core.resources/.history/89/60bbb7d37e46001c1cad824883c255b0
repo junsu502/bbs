@@ -1,0 +1,20 @@
+package mms.member.action;
+
+import java.sql.Connection;
+import java.util.Scanner;
+
+import mms.member.db.JdbcUtil;
+import mms.member.util.ConsoleUtill;
+
+public class MemberModifyAction implements Action{
+
+	@Override
+	public void execute(Scanner sc) throws Exception {
+		Connection con = JdbcUtil.getConnection();
+		ConsoleUtill cu = new ConsoleUtill();
+		String oldname = cu.getName("수정함", sc);
+		cu.getUpdateMember(sc, )
+		
+	}
+
+}

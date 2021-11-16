@@ -24,6 +24,6 @@
     <fullyQualifiedTypeName name="mms.member.dao.MemberDAO"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="mms.member.svc.MemberRemoveService"/>
-    <fullyQualifiedTypeName name="mms.member.db.JdbcUtil"/>
     <fullyQualifiedTypeName name="mms.member.util.ConsoleUtill"/>
+    <fullyQualifiedTypeName name="mms.member.db.JdbcUtil"/>
 </qualifiedTypeNameHistroy>

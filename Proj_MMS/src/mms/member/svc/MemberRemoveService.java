@@ -15,7 +15,7 @@ public class MemberRemoveService {
 			JdbcUtil.close(con);
 			return true;
 		} else {
-			JdbcUtil.rollback(con);
+			JdbcUtil.rollback();
 			return false;
 		}
 		

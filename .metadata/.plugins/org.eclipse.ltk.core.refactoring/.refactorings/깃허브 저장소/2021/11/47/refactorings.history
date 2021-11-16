@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;깃허브 저장소&apos;&#x0D;&#x0A;- Original project: &apos;깃허브 저장소&apos;&#x0D;&#x0A;- Destination element: &apos;깃허브 저장소&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     bin&#x0D;&#x0A;     src&#x0D;&#x0A;- Update references to refactored element" description="Move folders" element1="Proj_MMS/bin" element2="Proj_MMS/src" files="0" flags="589830" folders="2" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1637032797064" target="/깃허브 저장소" units="0" version="1.0"/>
+</session>
