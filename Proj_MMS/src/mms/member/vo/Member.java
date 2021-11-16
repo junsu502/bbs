@@ -7,7 +7,17 @@ public class Member {
 	private String nation;
 	private String email;
 	private int age;
-	
+	public Member() {
+		
+	}
+	public Member(String name, String addr, String nation, String email, int age) {
+		super();
+		this.name = name;
+		this.addr = addr;
+		this.nation = nation;
+		this.email = email;
+		this.age = age;
+	}
 	public int getId() {
 		return id;
 	}
@@ -45,6 +55,10 @@ public class Member {
 		this.age = age;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "name= " + this.name+ ", addr= " + this.addr + ", nation= "+
+	this.nation + ", Email= " + this.email + ", age= " + this.age;
+	}
 	
 }

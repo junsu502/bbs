@@ -4,16 +4,20 @@ import java.util.Scanner;
 
 import mms.member.svc.MemberAddService;
 import mms.member.util.ConsoleUtill;
-// 7. 회원가입
+import mms.member.vo.Member;
+
 public class MemberAddAction implements Action{
 
 	@Override
 	public void execute(Scanner sc) throws Exception {
-//		서비스에 있는거 호출
-		MemberAddService mas = new MemberAddService();
-		
-		
-		
+		ConsoleUtill conutil = new ConsoleUtill();
+		Member member = conutil.getNewMember(sc);
+		MemberAddService memberadd = new MemberAddService();
+		boolean success = memberadd.addMember(member);
+		if(success) 
+			conutil.printAddSuccessMessage(member);
+		else
+			conutil.printAddFailMessage(member);
 		
 	}
 
